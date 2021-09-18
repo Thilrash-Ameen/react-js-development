@@ -3,14 +3,13 @@ import ReactDom from 'react-dom';
 
 import './index.css';
 
+const title = 'I Love You to the Moon and Back';
+const author = 'Jackson Deep Mila';
+const image = "https://images-na.ssl-images-amazon.com/images/I/517h-u1AQlL._SX482_BO1,204,203,200_.jpg";
+
 const BookList = () => {
   return(
     <section className='booklist'>
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
       <Book />
     </section>
   );
@@ -18,22 +17,10 @@ const BookList = () => {
 
 const Book = () => {
   return <article className='book'>
-    <Image />
-    <Title />
-    <Author />
+    <img src={image} alt='' width="30%"/>
+    <h1>{title}</h1>
+    <h4>{author.toUpperCase()}</h4>
   </article>;
-}
-
-const Image = () => {
-  return <img src="https://images-na.ssl-images-amazon.com/images/I/517h-u1AQlL._SX482_BO1,204,203,200_.jpg" alt="" width="30%"></img>
-}
-
-const Title = () => {
-  return <h1>I Love You to the Moon and Back</h1>
-}
-
-const Author = () => {
-  return <h4 style={{color: '#617d98', fontSize: '0.75rem', marginTop: '0.25rem'}}>Jackson Deep Mila</h4>
 }
 
 // converting the react component as a HTML element
