@@ -1,6 +1,6 @@
 # React JS Development
 
-*Use the brances to see the contents
+* Use the brances to see the contents
 
 1. Create a React JS Application
 2. Nested Components & Tools
